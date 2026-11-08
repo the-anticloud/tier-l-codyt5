@@ -1,0 +1,47 @@
+{
+  "benchmark": "HELM_Lab_Results",
+  "project": "L_CODYT5",
+  "tier": "TIER_6_SECURITY_EVAL",
+  "slug": "Salesforce/codegen",
+  "commit": "ec21c93bda19",
+  "run_timestamp": "2026-09-30T15:11:19.033679+00:00",
+  "isolation": {
+    "environment": "local",
+    "model": "distilbert-base-uncased",
+    "hf_load_time_sec": 2.96,
+    "platform": "win32",
+    "python": "3.12.10"
+  },
+  "results": {
+    "framework": "HELM \u2014 Stanford Holistic Evaluation of Language Models (proxy)",
+    "source": "https://github.com/stanford-crfm/helm",
+    "note": "Full HELM requires GPU. Proxy: consistency + latency across 3 deterministic runs.",
+    "input": "Project L_CODYT5 provides 26 tracked files across ['Python'] with 2113 source lines.",
+    "runs": [
+      {
+        "seed": 0,
+        "label": "LABEL_0",
+        "score": 0.5284,
+        "latency_ms": 37.58
+      },
+      {
+        "seed": 1,
+        "label": "LABEL_0",
+        "score": 0.5284,
+        "latency_ms": 42.89
+      },
+      {
+        "seed": 2,
+        "label": "LABEL_0",
+        "score": 0.5284,
+        "latency_ms": 40.83
+      }
+    ],
+    "consistency": "PASS",
+    "avg_latency_ms": 40.43,
+    "status": "PASS",
+    "language_diversity": 1,
+    "primary_language": "Python",
+    "fairness_keywords_found": true
+  }
+}

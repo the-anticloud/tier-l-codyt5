@@ -1,0 +1,42 @@
+{
+  "benchmark": "OSINT_Lab_Results",
+  "project": "L_CODYT5",
+  "timestamp": "2026-09-30T15:11:19.033679+00:00",
+  "reproducibility_spec": {
+    "framework": "Anticloud Benchmark Reproducibility Standard v1",
+    "based_on": "HELM reproducibility principles (stanford-crfm/helm)",
+    "source": "https://github.com/stanford-crfm/helm"
+  },
+  "environment": {
+    "platform": "win32",
+    "python_version": "3.12.10",
+    "os": "nt",
+    "working_dir": "E:\\fenta\\Downloads\\The Anticloud"
+  },
+  "inputs": {
+    "project_name": "L_CODYT5",
+    "slug": "Salesforce/codegen",
+    "commit": "ec21c93bda19",
+    "tracked_files": 26,
+    "source_lines": 2113,
+    "licence": "Apache-2.0",
+    "size_mb": 1.39
+  },
+  "inputs_hash": "69ad1b7cedc5e60b38f9dc333ff07af112e8c1dfd663ae139503c6014a0c5d79",
+  "outputs": {
+    "results_file": "TIER_6_SECURITY_EVAL\\L_CODYT5\\OFFICIAL_BENCHMARKS\\OSINT_Lab_Results\\results.json",
+    "results_sha256": "8c1d8c3aa2c711efd277b645b03f0fc72939de61717f61ed2b1b6f4780fd3af1"
+  },
+  "reproduction_steps": [
+    "1. Clone Anticloud at commit HEAD",
+    "2. Ensure E:\\fenta\\Downloads\\The Anticloud is present",
+    "3. Run: python run_benchmarks_comprehensive.py",
+    "4. Run: python write_benchmark_subfolders.py",
+    "5. Run: python write_ledgers_repro_extra_benchmarks.py",
+    "6. Verify results_sha256 matches sha256(OFFICIAL_BENCHMARKS/OSINT_Lab_Results/results.json)"
+  ],
+  "hf_model": "distilbert-base-uncased",
+  "hf_source": "https://huggingface.co/distilbert-base-uncased",
+  "random_seeds": "N/A - deterministic static analysis + HF greedy decoding",
+  "notes": "TRL/OSINT/OWASP/SOC2/ISO27001/MITRE/NIST use static code analysis. HF uses live CPU inference."
+}

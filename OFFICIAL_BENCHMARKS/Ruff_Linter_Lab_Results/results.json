@@ -1,0 +1,20 @@
+{
+  "benchmark": "Ruff_Linter_Lab_Results",
+  "project": "L_CODYT5",
+  "run_timestamp": "2026-09-30T17:14:20.030944+00:00",
+  "source": "https://docs.astral.sh/ruff/",
+  "results": {
+    "framework": "Ruff \u2014 Fast Python Linter (Astral)",
+    "source": "https://docs.astral.sh/ruff/",
+    "files_scanned": 7,
+    "total_issues": 39,
+    "top_issue_codes": {
+      "I001": 7,
+      "UP006": 4,
+      "BLE001": 3,
+      "F401": 3,
+      "FURB122": 2
+    },
+    "status": "FAIL"
+  }
+}
